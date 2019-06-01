@@ -5,6 +5,9 @@ import java.util.UUID;
 public class UUIDTool {
 
     public static void main(String[] args) {
+        if(args.length == 0) {
+            System.out.println("NEEDS ARGUMENTS");
+        }
         if(args.length  == 1) {
             UUID id = UUID.fromString(args[0]);
             System.out.println("Least: " + id.getLeastSignificantBits());
