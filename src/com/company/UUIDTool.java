@@ -12,9 +12,12 @@ public class UUIDTool {
             UUID id = UUID.fromString(args[0]);
             System.out.println("Least: " + id.getLeastSignificantBits());
             System.out.println("Most: " + id.getMostSignificantBits());
-        } else {
+        }
+        if(args.length  == 2) {
             UUID id = new UUID(Long.valueOf(args[1]),Long.valueOf(args[0]));
             System.out.println("UUID: "+ id.toString());
+        } else {
+            System.out.println("TOO MANY ARGUMENTS");
         }
     }
 }
