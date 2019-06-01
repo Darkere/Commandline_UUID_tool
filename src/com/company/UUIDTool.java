@@ -2,10 +2,9 @@ package com.company;
 
 import java.util.UUID;
 
-public class Main {
+public class UUIDTool {
 
     public static void main(String[] args) {
-	// write your code here
         if(args.length  == 1) {
             UUID id = UUID.fromString(args[0]);
             System.out.println("Least: " + id.getLeastSignificantBits());
