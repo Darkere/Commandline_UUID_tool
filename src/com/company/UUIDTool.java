@@ -16,7 +16,8 @@ public class UUIDTool {
         if(args.length  == 2) {
             UUID id = new UUID(Long.valueOf(args[1]),Long.valueOf(args[0]));
             System.out.println("UUID: "+ id.toString());
-        } else {
+        }
+        if(args.length > 2) {
             System.out.println("TOO MANY ARGUMENTS");
         }
     }
